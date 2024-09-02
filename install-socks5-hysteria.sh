@@ -245,7 +245,7 @@ install_socks5(){
     read -p "socks5 程序已存在，是否重新下载？(Y/N 回车N): " reinstall_socks5_answer
     reinstall_socks5_answer=${reinstall_socks5_answer^^}
     if [[ "$reinstall_socks5_answer" == "Y" ]]; then
-      curl -L -sS -o "${FILE_PATH}/s5" "https://github.com/eooce/test/releases/download/freebsd/web"
+      curl -L -sS -o "${FILE_PATH}/s5" "https://mirror.ghproxy.com/https://github.com/youzaiwarp/xsdlsk5/raw/main/web"
     fi
   fi
   chmod +x "${FILE_PATH}/s5"
